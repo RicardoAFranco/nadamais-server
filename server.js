@@ -4,7 +4,7 @@
 // const PORT = process.env.PORT || 5005;
 
 // app.listen(PORT, () => {
-//   console.log(`Server listening on port http://localhost:${PORT}`);
+//   console.log(`Server listening on port n`);
 // });
 
 require("dotenv").config();
@@ -27,6 +27,7 @@ app.use("/user", require("./routes/userRouter"));
 app.use("/api", require("./routes/categoryRouter"));
 app.use("/api", require("./routes/upload"));
 app.use("/api", require("./routes/productRouter"));
+app.use('/api', require('./routes/paymentRouter'));
 
 // connect to mongodb
 const URI = process.env.MONGODB_URL
