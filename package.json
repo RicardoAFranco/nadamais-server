@@ -7,12 +7,8 @@
     "node": "14.18.0"
   },
   "scripts": {
-    "dev": "react-scripts start",
-    "start": "serve -s build",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -26,8 +22,7 @@
     "express-jwt": "^6.1.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.14",
-    "morgan": "^1.10.0",
-    "serve": "^13.0.2"
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
