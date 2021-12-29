@@ -1,7 +1,8 @@
 {
   "name": "m3-nadamais-server",
   "version": "0.0.0",
-  "private": true,
+  "description": "",
+  "main": "server.js",
   "engines": {
     "npm": "6.14.15",
     "node": "14.18.0"
